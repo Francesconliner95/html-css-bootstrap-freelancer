@@ -1,0 +1,50 @@
+/* button>span:last-child{
+
+} */
+
+.navbar-header,
+#bs-example-navbar-collapse-1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.burger-menu-box{
+    display: inline-block;
+}
+
+.navbar.navbar-default{
+    background-color: #2c3e50;
+    border: none;
+    border-radius: none;
+    font-weight: 1000;
+}
+
+.navbar-toggle.collapsed{
+    background-color: #1abc9c;
+    border: none;
+}
+
+.navbar-header>.navbar-toggle>.burger-menu-box>span.icon-bar{
+    background-color: white;
+    width: 15px;
+    margin-top: 2px;
+}
+
+a.navbar-brand.text-uppercase,
+.navbar-default .navbar-collapse>.navbar-nav>li>a,
+span.text-uppercase  {
+    color: white;
+}
+
+@media (min-width: 768px){
+ .navbar.navbar-default{
+    border-radius: 0;
+ }
+
+ .navbar-header,
+ #bs-example-navbar-collapse-1{
+     padding-top: 25px;
+     padding-bottom: 15px;
+ }
+
+}
