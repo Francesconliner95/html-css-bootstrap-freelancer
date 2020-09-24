@@ -1,13 +1,14 @@
-/* button>span:last-child{
 
-} */
+/***NAVBAR***/
 
 .navbar-header,
 #bs-example-navbar-collapse-1{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
+.navbar.navbar-default{
+    margin-bottom: 0;
+}
 .burger-menu-box{
     display: inline-block;
 }
@@ -46,5 +47,53 @@ span.text-uppercase  {
      padding-top: 25px;
      padding-bottom: 15px;
  }
+}
 
+/***JUMBOTRON***/
+
+body>.jumbotron{
+    background-color: #1abc9c;
+}
+
+.jumbotron .row{
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.jumbotron .row>img{
+    height: 300px;
+}
+
+.row>h1.text-uppercase{
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+    padding: 15px 0;
+}
+
+.row.decoration{
+    padding: 0 100px;
+}
+
+.row.decoration>div{
+    display: inline-block;
+}
+
+.left,
+.right{
+    width: calc(100% / 4);
+    height: 4px;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+.center>i{
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.row>h3{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
