@@ -1,4 +1,40 @@
 
+.row{
+    text-align: center;
+}
+
+.row>h1.text-uppercase{
+    color: white;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 15px 0;
+}
+
+.row.decoration{
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.row.decoration>div{
+    display: inline-block;
+}
+
+.left,
+.right{
+    width: calc(100% / 4);
+    height: 4px;
+    background-color: white;
+    margin-bottom: 8px;
+
+}
+
+.center>i{
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
 /***NAVBAR***/
 
 .navbar-header,
@@ -37,19 +73,6 @@ span.text-uppercase  {
     color: white;
 }
 
-@media (min-width: 768px){
- .navbar.navbar-default{
-    border-radius: 0;
-}
-
-a.navbar-brand.text-uppercase{
-        font-size: 2em;
-    }
-
-.navbar-default .navbar-collapse>.navbar-nav>li>a{
-        font-size: 1.2em;
-    }
- }
 
  .navbar-header,
  #bs-example-navbar-collapse-1{
@@ -77,49 +100,9 @@ body>.jumbotron{
     padding-top: 200px;
 }
 
-.jumbotron .row{
-    /* margin: 0 auto; */
-    text-align: center;
-}
 .jumbotron .row>img{
     height: 260px;
 }
-
-.row>h1.text-uppercase{
-    color: white;
-    font-weight: 600;
-    font-size: 60px;
-    padding: 15px 0;
-}
-
-.row.decoration{
-    padding: 0;
-    width: 60%;
-    margin: 0 auto;
-}
-
-.row.decoration>div{
-    display: inline-block;
-}
-
-.jumbotron .left,
-.jumbotron .right{
-    width: calc(100% / 4);
-    height: 4px;
-    background-color: white;
-    margin-bottom: 8px;
-
-}
-
-/* .fas.fa-star::after,
-.fas.fa-star::before{
-    content: '';
-    width: 100px;
-    height: 4px;
-    background-color: white;
-    margin-bottom: 8px;
-    display: inline-block;
-} */
 
 .jumbotron .center>i{
     color: white;
@@ -152,15 +135,12 @@ body>.jumbotron{
 
 .portfolio .left,
 .portfolio .right{
-    width: calc(100% / 4);
-    height: 4px;
     background-color: #2c3e50;
     margin-bottom: 8px;
 }
 
 .portfolio .center>i{
     color: #2c3e50;
-    font-size: 30px;
     margin: 15px 10px;
 
 }
@@ -216,4 +196,59 @@ body>.jumbotron{
 .portfolio img:hover{
     cursor: pointer;
     display: inline-block;
+}
+
+/***ABOUT***/
+
+.about{
+    background-color:#1abc9c;
+}
+
+.about .row>div>p{
+    color: white;
+    text-align: left;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.about button{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 2px white;
+    color: white;
+    background-color: #1abc9c;
+    font-size: 20px;
+}
+
+/********MEDIA QUERY*******/
+
+@media (min-width: 768px){
+
+  /**NAVBAR**/
+     .navbar.navbar-default{
+        border-radius: 0;
+    }
+
+    a.navbar-brand.text-uppercase{
+        font-size: 2em;
+    }
+
+    .navbar-default .navbar-collapse>.navbar-nav>li>a{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (min-width: 992px){
+
+     /**ABOUT**/
+    .about .row>div:first-child p{
+        padding-left: 190px;
+    }
+    .about .row>div:last-child p{
+        padding-left: 10px;
+        padding-right: 200px;
+    }
 }
