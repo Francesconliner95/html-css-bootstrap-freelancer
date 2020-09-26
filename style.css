@@ -266,6 +266,68 @@ input.form-control::placeholder{
     padding-left: 0px;
 
 }
+
+/***FOOTER***/
+
+footer{
+    background-color: #2c3e50;
+}
+
+div>h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 80px;
+}
+
+div>p{
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+.main-circle{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.circle{
+    float: left;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: solid 2px white;
+    margin: 0 8px;
+}
+
+.circle>i{
+    padding-top: 12px;
+    color: white;
+}
+
+footer p>a{
+    color: #1abc9c;
+}
+footer p>a:hover{
+    color: #148f77
+}
+
+/***COPYRIGHT***/
+
+.copyright{
+    height: 75px;
+    background-color: #1a252f;
+}
+
+.copyright p{
+    font-size: 13px;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
 /********MEDIA QUERY*******/
 
 @media screen and (max-width: 992px) and (min-width: 769px){
@@ -316,10 +378,15 @@ input.form-control::placeholder{
        .row.send{
            padding-left: 150px;
        }
+
+    /*FOOTER*/
+       footer .row>div{
+           padding-bottom: 50px;
+       }
 }
 
 @media (min-width: 1200px){
-    
+
     /**NAVBAR**/
        .navbar.navbar-default{
           border-radius: 0;
@@ -346,4 +413,9 @@ input.form-control::placeholder{
     .row.send{
         padding-left: 290px;
     }
+
+    /*FOOTER*/
+       footer .row>div{
+           padding-bottom: 50px;
+       }
 }
