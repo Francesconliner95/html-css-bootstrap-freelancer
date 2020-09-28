@@ -149,10 +149,8 @@ body>.jumbotron{
     margin-right: -25px;
 }
 
-.portfolio .row>.col-xs-12,
-.portfolio .row>.col-md-6,
-.portfolio .row>.col-lg-4{
-    padding: 25px;
+#box>div{
+    padding: 80px;
 }
 
 .portfolio img{
@@ -176,6 +174,7 @@ body>.jumbotron{
     border-radius: 10px;
     /* display: none; */
     opacity: 0;
+    cursor: pointer;
     /* content: "\f067"; */
 }
 
@@ -221,6 +220,11 @@ body>.jumbotron{
     font-size: 20px;
 }
 
+.about button:hover{
+    color: #2c3e50;
+    background-color: white;
+}
+
 /***CONTACT ME***/
 .form-group>div
 {
@@ -228,12 +232,6 @@ body>.jumbotron{
     padding-bottom: 20px;
     border-bottom: solid 1px rgba(150, 150, 150, 0.5);
 }
-
-.form-horizontal>.form-group:last-child div
-{
-    padding-bottom: 200px;
-}
-
 
 input.form-control{
     border: none;
@@ -265,6 +263,31 @@ input.form-control::placeholder{
     padding-bottom: 90px;
     padding-left: 0px;
 
+}
+
+
+.form-horizontal{
+    position: relative;
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label{
+    color: #007bff;
+    visibility: visible;
+}
+
+.form-group>div>label{
+    color: black;
+    visibility: hidden;
+    position: absolute;
+    top: -10px;
+    left: 13px;
+}
+textarea.form-control{
+    border: none;
+}
+textarea::placeholder{
+    font-size: 25px;
 }
 
 /***FOOTER***/
@@ -315,6 +338,15 @@ footer p>a:hover{
     color: #148f77
 }
 
+.circle:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.circle:hover i{
+    color: #1a252f;
+}
+
 /***COPYRIGHT***/
 
 .copyright{
@@ -344,6 +376,11 @@ footer p>a:hover{
           font-size: 1.2em;
       }
 
+    /**PORTFOLIO**/
+        #box>div{
+          padding: 25px;
+        }
+
     /*CONTACT ME*/
       .row.send{
           padding-left: 0px;
@@ -363,6 +400,11 @@ footer p>a:hover{
 
       .navbar-default .navbar-collapse>.navbar-nav>li>a{
           font-size: 1.2em;
+      }
+
+    /**PORTFOLIO**/
+      #box>div{
+        padding: 25px;
       }
 
     /**ABOUT**/
@@ -399,6 +441,11 @@ footer p>a:hover{
       .navbar-default .navbar-collapse>.navbar-nav>li>a{
           font-size: 1.2em;
       }
+
+      /**PORTFOLIO**/
+        #box>div{
+          padding: 25px;
+        }
 
     /**ABOUT**/
        .about .row>div:first-child p{
